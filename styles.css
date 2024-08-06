@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundal.jfif'); /* Înlocuiește cu calea imaginii tale */
+    background-size: cover;
+    background-position: center;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Culoare albă semi-transparentă */
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 100px; /* Ajustează înălțimea logo-ului */
+    width: auto; /* Păstrează proporțiile imaginii */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+nav ul li a:hover {
+    color: #ff6600; /* Culoare de accent */
+}
+.social-media {
+    display: flex;
+    gap: 25px; /* Distanța între iconițe */
+}
+.social-icon {
+    color: #000;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color: #ff6600; /* Culoarea de hover pentru iconițe */
+}
+.hero {
+    background-image: url('imagine.jpg'); /* Înlocuiește cu imaginea ta */
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #e65500;
+}
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    border-radius: 8px;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container p {
+    text-align: justify;
+    line-height: 1.6;
+}
+.offers, .services, .contact {
+    background-color: #eaeaea;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.offer-item, .service-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.offer-item h3, .service-item h3 {
+    margin-top: 0;
+}
+.contact-item {
+    margin-top: 10px;
+}
+.contact-item label {
+    font-weight: bold;
+}
+.contact-item input, .contact-item textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-item textarea {
+    resize: vertical;
+}
+
+.boat-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.boat-item h3 {
+    margin-top: 0;
+}
+
+/* Stiluri pentru ecrane medii (tablete) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .hero {
+        height: 600px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Stiluri pentru ecrane mici (telefoane) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+    
+    header img {
+        height: 50px;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    .hero {
+        height: 400px;
+        font-size: 1rem;
+    }
+    
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .social-media {
+        display: none;
+    }
+}
