@@ -274,6 +274,60 @@ footer {
     margin-top: 10px;
 }
 
+.footer-details ul {
+    list-style-type: none; /* Elimină punctele de la liste */
+    padding: 0; /* Elimină paddingul implicit */
+    margin: 0; /* Elimină marginea implicită */
+}
+
+.footer-details li {
+    display: flex; /* Folosește flexbox pentru aliniere pe același rând */
+    align-items: center; /* Aliniază vertical iconițele și textul */
+    margin-bottom: 10px; /* Spațiu între elementele listei */
+}
+
+.footer-details i {
+    margin-right: 8px; /* Spațiu între iconiță și text */
+    color: #000000; /* Culoare iconiță */
+}
+
+.footer-details a {
+    color: #000000; /* Culoare text link */
+    text-decoration: none; /* Elimină sublinierea linkurilor */
+    transition: color 0.3s ease; /* Tranziție de culoare la hover */
+}
+
+.footer-details a:hover {
+    color: #ff6600; /* Culoare de accent la hover */
+}
+
+.footer-details ul {
+    list-style-type: none; /* Elimină punctele de la liste */
+    padding: 0; /* Elimină paddingul implicit */
+    margin: 0; /* Elimină marginea implicită */
+}
+
+.footer-details li {
+    display: flex; /* Folosește flexbox pentru aliniere pe același rând */
+    align-items: center; /* Aliniază vertical iconițele și textul */
+    margin-bottom: 10px; /* Spațiu între elementele listei */
+}
+
+.footer-details i {
+    margin-right: 8px; /* Spațiu între iconiță și text */
+    color: #000000; /* Culoare iconiță */
+}
+
+.footer-details a {
+    color: #000000; /* Culoare text link */
+    text-decoration: none; /* Elimină sublinierea linkurilor */
+    transition: color 0.3s ease; /* Tranziție de culoare la hover */
+}
+
+.footer-details a:hover {
+    color: #ff6600; /* Culoare de accent la hover */
+}
+
 .footer-details ul, 
 .footer-links ul, 
 .footer-anpc ul {
@@ -339,7 +393,7 @@ footer {
 }
 
 
-/* Stiluri pentru ecrane mici (telefoane) */
+/* Stiluri subsol pentru ecrane mici (telefoane) */
 @media (max-width: 480px) {
     header {
         padding: 5px;
