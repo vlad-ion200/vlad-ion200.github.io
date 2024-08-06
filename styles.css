@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 .social-media {
     display: flex;
-    gap: 15px; /* Ajustează distanța între iconițe */
+    gap: 25px; /* Distanța între iconițe */
 }
 
 .social-icon {
@@ -220,11 +220,124 @@ nav ul li a:hover {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
+}
 
-    .social-media {
-        gap: 20px; /* Ajustează distanța pentru ecrane medii */
+footer {
+    background-color: #ffffff; /* Setează fundalul la negru */
+    color: #000000; /* Setează culoarea textului la alb */
+    padding: 0px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 100px; /* Ajustează înălțimea logo-ului */
+    width: auto; /* Păstrează proporțiile imaginii */
+    margin-top: 30px; /* Spațiu între imagine și text */
+    vertical-align: left; /* Aliniere verticală la mijloc */
+}
+
+footer {
+    background-color: #ffffff; /* Fundal alb */
+    color: #000000; /* Culoare text negru */
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-details, .footer-links, .footer-anpc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aliniază conținutul la centru */
+    min-width: 200px; /* Lățimea minimă pentru secțiuni */
+    margin-top: 10px;
+}
+
+.footer-details ul, 
+.footer-links ul, 
+.footer-anpc ul {
+    list-style-type: none; /* Elimină punctele de la liste */
+    padding: 0; /* Elimină paddingul implicit */
+    margin-top: 5px; /* Elimină marginea implicită */
+}
+
+.footer-details li,
+.footer-links li,
+.footer-anpc li {
+    margin-bottom: 10px; /* Spațiu între elementele listei */
+}
+
+.footer-details a, 
+.footer-links a, 
+.footer-anpc a {
+    color: #000000; /* Culoare text negru pentru linkuri */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; /* Face linkurile să ocupe întreaga lățime a elementului li */
+    text-align: center; /* Aliniază textul la centru */
+}
+
+.footer-details a:hover, 
+.footer-links a:hover, 
+.footer-anpc a:hover {
+    color: #ff6600; /* Culoare de accent la hover */
+}
+
+.footer-img {
+    width: 200px; /* Lățimea imaginii */
+    height: 80px; /* Înălțimea imaginii */
+    margin-bottom: 10px; /* Spațiu sub imagine */
+}
+
+
+.footer-img {
+    width: 150px; /* Lățimea imaginii */
+    height: 40px; /* Înălțimea imaginii */
+    margin-right: 50px; /* Spațiu între imagine și text */
+    vertical-align: right; /* Aliniere verticală la mijloc */
+}
+
+
+/* Centrăm imaginile din .footer-anpc */
+.footer-anpc img {
+    display: block; /* Face imaginea să fie un bloc pentru a o centra */
+    margin: 0 auto; /* Centrează imaginea în cadrul părintelui */
+}
+
+/* Responsivitate pentru subsol */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-details, .footer-links {
+        margin-top: 10px;
     }
 }
+
 
 /* Stiluri pentru ecrane mici (telefoane) */
 @media (max-width: 480px) {
@@ -264,10 +377,13 @@ nav ul li a:hover {
         padding: 8px 16px;
         font-size: 0.8rem;
     }
-
+    
     .social-media {
-        gap: 15px; /* Ajustează distanța pentru ecrane mici */
-        justify-content: center;
-        margin-top: 10px;
+        display: none;
+    }
+
+    .container {
+        padding: 10px;
     }
 }
+
