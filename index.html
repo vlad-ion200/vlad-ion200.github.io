@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VI Yachting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundal.jfif'); /* Înlocuiește cu calea imaginii tale */
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* Culoare albă semi-transparentă */
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 100px; /* Ajustează înălțimea logo-ului */
+            width: auto; /* Păstrează proporțiile imaginii */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        nav ul li a:hover {
+            color: #ff6600; /* Culoare de accent */
+        }
+        .social-media {
+            display: flex;
+            gap: 25px; /* Distanța între iconițe */
+        }
+        .social-icon {
+            color: #000;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #ff6600; /* Culoarea de hover pentru iconițe */
+        }
+        .hero {
+            background-image: url('imagine.jpg'); /* Înlocuiește cu imaginea ta */
+            height: 800px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e65500;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: -20px;
+            border-radius: 8px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .offers, .services, .contact {
+            background-color: #eaeaea;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        .offer-item, .service-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .offer-item h3, .service-item h3 {
+            margin-top: 0;
+        }
+        .contact-item {
+            margin-top: 10px;
+        }
+        .contact-item label {
+            font-weight: bold;
+        }
+        .contact-item input, .contact-item textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-item textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="downloadmic.png" alt="VI Yachting Logo">
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Acasă</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">Despre Noi</a></li>
+                <li><a href="#services" onclick="scrollToSection('services')">Servicii</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Bun venit la VI Yachting</h2>
+        <p>Descoperă cele mai bune oferte pentru experiențe de neuitat pe mare.</p>
+        <button class="button" onclick="scrollToSection('offers')">Vezi Ofertele</button>
+    </section>
+
+    <div class="container" id="about">
+        <h2>Despre Noi</h2>
+        <p>Aici poți adăuga un text despre afacerea ta, echipă și misiune. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor suscipit nisi, nec sollicitudin massa consectetur vel. Praesent vel eros vel nisi viverra pharetra. Donec efficitur, dolor non facilisis varius, elit arcu facilisis justo, at faucibus sapien dui id lectus. Sed at dapibus velit. Curabitur malesuada velit a lacus tristique, a ultricies nulla congue.</p>
+    </div>
+
+    <div class="services container" id="services">
+        <h2>Serviciile Noastre</h2>
+        <div class="service-item">
+            <h3>Serviciu 1</h3>
+            <p>Descrierea serviciului 1. Detalii despre ce oferă acest serviciu și cum poate beneficia utilizatorul.</p>
+        </div>
+        <div class="service-item">
+            <h3>Serviciu 2</h3>
+            <p>Descrierea serviciului 2. Informații detaliate și avantaje ale acestui serviciu specific.</p>
+        </div>
+        <!-- Adaugă mai multe servicii aici -->
+    </div>
+
+    <div class="offers container" id="offers">
+        <h2>Oferte Speciale</h2>
+        <div class="offer-item">
+            <h3>Oferta 1</h3>
+            <p>Descrierea ofertei 1. Un pachet special pentru aventuri maritime. Include ghidare și toate echipamentele necesare.</p>
+        </div>
+        <div class="offer-item">
+            <h3>Oferta 2</h3>
+            <p>Descrierea ofertei 2. O experiență exclusivă pentru grupuri mici, cu toate facilitățile incluse.</p>
+        </div>
+        <!-- Adaugă mai multe oferte aici -->
+    </div>
+
+    <div class="contact container" id="contact">
+        <h2>Contactează-ne</h2>
+        <div class="contact-item">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" placeholder="Introduceți numele dvs.">
+        </div>
+        <div class="contact-item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Introduceți email-ul dvs.">
+        </div>
+        <div class="contact-item">
+            <label for="telefon">Telefon:</label>
+            <input type="telefon" id="telefon" placeholder="Introduceți nr. de telefon">
+        </div>
+        <div class="contact-item">
+            <label for="message">Mesaj:</label>
+            <textarea id="message" rows="5" placeholder="Scrieți mesajul dvs."></textarea>
+        </div>
+        <button class="button">Trimite</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
