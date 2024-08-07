@@ -153,7 +153,7 @@ nav ul li a:hover {
 }
 
 .contact-item input, .contact-item textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -177,18 +177,17 @@ nav ul li a:hover {
     margin-top: 0;
 }
 
-/* Stiluri pentru ecrane medii (tablete) */
-@media (max-width: 410px) {
+/* Stiluri pentru ecrane mici (telefoane) */
+@media (max-width: 428px) {
     header {
-        padding: 10px;
         flex-direction: row;
         align-items: stretch;
-        height: 280px;
+        height: 235px;
      
     }
     
     header img {
-        height: 80px;
+        height: 100px;
     }
 
     nav ul {
