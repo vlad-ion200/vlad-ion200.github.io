@@ -371,7 +371,7 @@ footer {
 
 
 /* Stiluri subsol pentru ecrane mici (telefoane) */
-@media (max-width: 480px) {
+@media (max-width: 428px) {
     header {
         padding: 5px;
     }
