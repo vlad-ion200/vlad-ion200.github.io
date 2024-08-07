@@ -192,6 +192,8 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column;
         margin-top: 10px;
+        width: 320px;
+        height: 480px;
     }
     
     nav ul li {
@@ -429,7 +431,7 @@ footer {
     padding: 10px 20px; /* Spațiere internă pentru secțiunea serviciilor */
     background-color: #f9f9f9; /* Fundal ușor gri pentru contrast */
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .service-item {
@@ -445,8 +447,8 @@ footer {
 
 
 .service-item p {
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: justify;
 }
