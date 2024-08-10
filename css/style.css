@@ -9,7 +9,6 @@ Do not remove the back-link in this web template
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
-
 /* Reset
 ---------------------------------*/
 ul {
@@ -244,7 +243,7 @@ p {
 ---------------------------------*/
 
 #service {
-    padding: 60px 0px;
+    padding: 30px 0px;
     background: #EFEFEF;
 }
 
@@ -262,20 +261,13 @@ p {
 }
 
 .service_icon {
-    border: 2px solid #005490;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
+   
+    width: auto;
+    height: auto;
     margin: 0px auto 25px;
 }
 
-.service_icon.icon2 {
-    border: 2px solid #005490;
-}
 
-.service_icon.icon3 {
-    border: 2px solid #005490;
-}
 
 .service_icon span {
     background: transparent;
@@ -1481,6 +1473,7 @@ footer {
     align-items: center; /* Aliniază conținutul la centru */
     min-width: 200px; /* Lățimea minimă pentru secțiuni */
     margin-top: 30px;
+    
 }
 
 .footer-details ul {
