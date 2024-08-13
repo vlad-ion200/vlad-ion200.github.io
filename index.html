@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <title>VI Yachting</title>
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" href="img/logo2.png" type="image/png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
 
  
 <!--[if lt IE 9]>
@@ -59,7 +61,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #ffffff;
             text-align: center;
         }
 
@@ -73,15 +75,20 @@
             z-index: -1;
         }
 
-
         .hero-title {
-            font-size: 6em;
-            margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 6em;
+        font-weight: bold;
+        margin: 0;
+        z-index: 2;
         }
 
         .hero-subtitle {
+            font-family: 'Raleway', sans-serif;
             font-size: 1.5em;
+            font-weight: bold;
             margin: 10px 0 0 0;
+            z-index: 1;
         }
 
         /* Media queries pentru dispozitive mobile */
@@ -112,22 +119,21 @@
                 padding: 10px;
             }
         }
-    </style>
+      </style>
 </head>
 <body>
-    <div class="hero">
-      <video autoplay muted loop playsinline>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.webm" type="video/webm">
-        Browserul tău nu suportă elementul video.
+  <div class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="video2.mp4" type="video/mp4">
+      <source src="video2.webm" type="video/webm">
+      Browserul tău nu suportă elementul video.
     </video>
-        
-        </video>
-        <div class="hero-content">
-            <h1 class="hero-title">VI Yachting</h1>
-            <p class="hero-subtitle">Acesta este subtitlul eroului tău.</p>
-        </div>
+    
+    <div class="hero-content" style="position: relative; top: -80px;">
+      <h1 class="hero-title">VI Yachting</h1>
+      <p class="hero-subtitle">Navighează fără griji – Servicii nautice premium</p>
     </div>
+  </div>
 </body>
 </html>
 
@@ -139,14 +145,14 @@
     <h2>Despre Noi</h2>
     <div class="inner_section">
 	<div class="row">
-      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/lala.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""style="width: auto; height: auto;"></div>
       	<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
         	<div class=" delay-01s animated fadeInDown wow animated">
-			<h3>Lorem Ipsum has been the industry's standard dummy text ever..</h3><br/> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.PageMaker including versions of Lorem Ipsum.</p> <br/>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<h3>VI Yachting – Partenerul tău de încredere pe mare</h3><br/> 
+            <p>La VI Yachting, pasiunea noastră pentru mare se reflectă în fiecare serviciu pe care îl oferim. Cu o echipă de profesioniști dedicați și parteneriate solide cu flote de ambarcațiuni de top, ne asigurăm că fiecare experiență nautică este una memorabilă. Oferim servicii complete, de la întreținerea și reparația ambarcațiunilor până la croaziere de lux, închiriere de yachturi și organizare de evenimente pe apă.</p> <br/>
+<p>De asemenea, suntem alături de tine cu serviciul de consultanță specializată pentru achiziția de ambarcațiuni și servicii de transfer, oferindu-ți asistență personalizată la fiecare pas, astfel încât să te bucuri de un proces simplu și eficient. Fie că ești un navigator experimentat sau începător, ne asigurăm că fiecare detaliu este gestionat cu atenție și profesionalism. Cu VI Yachting, navighezi mereu în siguranță și stil, bucurându-te de cele mai bune condiții și peisaje de neuitat.</p>
 </div>
-<div class="work_bottom"> <span>Want to know more..</span> <a href="#contact" class="contact_btn">Cere ofertă</a> </div>       
+<div class="work_bottom"> <span>Vrei să știi mai mult..</span> <a href="#contact" class="contact_btn">Cere ofertă</a> </div>       
 	   </div>
       	
       </div>
@@ -247,7 +253,7 @@
     
     <!-- Title -->
     <div class="section-title">
-      <h2>Portfolio</h2>
+      <h2>Aicon 56</h2>
     </div>
     <!--/Title --> 
     
@@ -382,15 +388,11 @@
   
   <div class="portfolio_btm"></div>
   
-  
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
   </div>
  
-  
 </section>
 <!--/Portfolio --> 
+
 
 <!--Footer-->
 <footer class="footer_wrapper" id="contact">
@@ -436,7 +438,7 @@
         <div class="footer-details" style="margin-top: 30px;">
             <h3>Contact</h3>
             <ul>
-                <li><i class="fas fa-envelope"></i><a href="mailto:itsvladdhd@gmail.com"> itsvladdhd@gmail.com</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:viyachting@gmail.com"> viyachting@gmail.com</a></li>
                 <li><i class="fas fa-phone"></i><a href="tel:+40736068850"> +40 736 068 850</a></li>
             </ul>
         </div>
@@ -465,6 +467,10 @@
             </ul>
         </div>
     </div>
+    <div class="copyright" style="text-align: center; font-size: 16px; color: #000000; padding: 10px 0; background-color: #386177; position: relative; bottom: 0; width: 100%;">
+      <p>Copyright 2024 © VI Yachting</p>
+  </div>
+  
 </footer>
 
 </footer>
