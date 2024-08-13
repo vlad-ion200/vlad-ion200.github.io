@@ -91,7 +91,7 @@ body {
 h2 {
     font-size: 38px;
     color: #222222;
-    font-family: 'Raleway', sans-serif;
+    font-family:    
     font-weight: normal;
     margin: 0px 0 25px 0;
     text-align: center;
@@ -336,7 +336,7 @@ p {
 }
 
 .service-list-col1 i {
-    display:;
+    display:flex;
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -392,6 +392,82 @@ a.contact_btn:hover {
 
 
 /* Portfolio
+---------------------------------*/
+
+
+#Portfolio {
+    padding: 60px 0px;
+}
+
+.Portfolio-nav {
+    padding: 0;
+    margin: 0 0 45px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.Portfolio-nav li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.Portfolio-nav li a {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #222222;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Portfolio-nav li a:hover {
+    background: #005490;
+    color: #fff;
+    text-decoration: none;
+}
+
+.portfolioContainer {
+    margin: 0 auto;
+    padding-left: 15px;
+    width: auto !important;
+}
+
+.Portfolio-box {
+    text-align: center;
+    width: 350px;
+    overflow: hidden;
+    float: left;
+    padding: 12px 0px;
+}
+
+.Portfolio-box img {
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.Portfolio-box img:hover {
+    opacity: 0.6;
+}
+
+.Portfolio-nav li a.current {
+    background: #005490;
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Portfolio2
 ---------------------------------*/
 
 
@@ -1500,7 +1576,7 @@ footer {
 }
 
 .footer-details a:hover {
-    color: #ff6600; /* Culoare de accent la hover */
+    color: #2a3c85; /* Culoare de accent la hover */
 }
 
 
@@ -1527,11 +1603,11 @@ footer {
     display: block; /* Face linkurile să ocupe întreaga lățime a elementului li */
     text-align: center; /* Aliniază textul la centru */
 }
-
+s
 .footer-details a:hover, 
-.footer-links a:hover, 
+.footer-links a:hover, s
 .footer-anpc a:hover {
-    color: #ff6600; /* Culoare de accent la hover */
+    color: #0d10e8; /* Culoare de accent la hover */
 }
 
 .footer-img {
