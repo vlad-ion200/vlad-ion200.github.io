@@ -296,7 +296,7 @@ p {
 
 .service_block p {
     font-size: 16px;
-    color: #888888;
+    color: #000000;
     margin: 0px;
 }
 	
@@ -390,83 +390,196 @@ a.contact_btn:hover {
     background: transparent;
 }
 
-
-/* Portfolio
----------------------------------*/
-
+/* Vanzare ambarcatiuni css */
 
 #Portfolio {
     padding: 60px 0px;
 }
 
-.Portfolio-nav {
-    padding: 0;
-    margin: 0 0 45px 0;
+.section-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.portfolio_description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio_description h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio_description ul {
     list-style: none;
-    text-align: center;
-}
-
-.Portfolio-nav li {
-    margin: 0 10px;
-    display: inline;
-}
-
-.Portfolio-nav li a {
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #222222;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background: #f7f7f7;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.Portfolio-nav li a:hover {
-    background: #005490;
-    color: #fff;
-    text-decoration: none;
-}
-
-.portfolioContainer {
+    padding: 0;
+    text-align: left;
     margin: 0 auto;
-    padding-left: 15px;
-    width: auto !important;
+    max-width: 600px;
 }
 
-.Portfolio-box {
-    text-align: center;
-    width: 350px;
-    overflow: hidden;
-    float: left;
-    padding: 12px 0px;
+.portfolio_description ul li {
+    margin-bottom: 10px;
 }
 
-.Portfolio-box img {
+.portfolio_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.portfolio_item {
+    flex: 1 1 calc(33.333% - 30px); /* Trei imagini pe rând cu spațiu între ele */
+    max-width: calc(33.333% - 30px);
+    box-sizing: border-box;
+}
+
+.portfolio_img img {
+    width: 100%;
+    height: auto;
+    display: block;
     transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
 }
 
-.Portfolio-box img:hover {
-    opacity: 0.6;
+
+.portfolio_img img:hover {
+    opacity: 0.8;
 }
 
-.Portfolio-nav li a.current {
-    background: #005490;
-    color: #fff;
+.portfolio_btm {
+    margin-top: 30px;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ascunde orice conținut care depășește dimensiunea modalului */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundal semi-transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    max-width: 100%; /* Lățime maximă a imaginii */
+    max-height: 100%; /* Înălțime maximă a imaginii */
+    width: auto; /* Lățime auto pentru a menține proporțiile */
+    height: auto; /* Înălțime auto pentru a menține proporțiile */
+    object-fit: contain; /* Asigură că imaginea se potrivește în container fără a fi distorsionată */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrează imaginea pe ecran */
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
     text-decoration: none;
-}
+    cursor: pointer;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px; /* Ajustează poziția verticală a săgeților */
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 40px; /* Mărime săgeți mai mari pentru vizibilitate */
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
 
-img {
-    max-width: 100%;
-}
-
-
+  /* Pentru ecrane mici (mobile) */
+@media (max-width: 500px ) {
+    #Portfolio {
+      padding: 30px 0;
+    }
+  
+    .section-title,
+    .portfolio_description {
+      margin-bottom: 20px;
+    }
+  
+    .portfolio_description h4 {
+      font-size: 20px;
+    }
+  
+    .portfolio_description ul {
+      max-width: 100%;
+    }
+  
+    .portfolio_wrapper {
+      flex-direction: column; /* Coloană pentru ecrane mici */
+    }
+  
+    .portfolio_item {
+      flex: 1 1 100%; /* O imagine pe rând */
+      max-width: 100%;
+    }
+  
+    .modal-content {
+      max-width: 90%;
+      max-height: 80%;
+    }
+  
+    .close {
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+    }
+  
+    .prev, .next {
+      padding: 12px;
+      font-size: 30px;
+      margin-top: -20px;
+    }
+  
+    .Portfolio-nav li a {
+      font-size: 10px;
+      padding: 8px 16px;
+    }
+  
+    .Portfolio-box {
+      width: 100%; /* 100% lățime pe ecrane mici */
+      padding: 10px 0;
+    }
+  }
+  
 /* Portfolio2
 ---------------------------------*/
 
@@ -508,25 +621,6 @@ img {
     text-decoration: none;
 }
 
-.portfolioContainer {
-    margin: 0 auto;
-    padding-left: 15px;
-    width: auto !important;
-}
-
-.Portfolio-box {
-    text-align: center;
-    width: 350px;
-    overflow: hidden;
-    float: left;
-    padding: 12px 0px;
-}
-
-.Portfolio-box img {
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
 
 .Portfolio-box img:hover {
     opacity: 0.6;
@@ -541,6 +635,7 @@ img {
 img {
     max-width: 100%;
 }
+
 
 /* no transition on .isotope container */
 
@@ -883,8 +978,7 @@ img {
 
 .section-title h2 {
     color: #222222;
-    font-family: 'Raleway', sans-serif;
-    font-size: 34px;
+    font-size: 36px;
     letter-spacing: -1px;
     margin: 0 0 15px;
     text-align: center;
@@ -935,7 +1029,7 @@ img {
 
 .portfolio-item .portfolio_img img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .portfolio-item:hover .item_overlay {
