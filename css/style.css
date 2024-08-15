@@ -524,6 +524,8 @@ a.contact_btn:hover {
     background-color: rgba(0, 0, 0, 1);
   }
 
+  
+
   /* Pentru ecrane mici (mobile) */
 @media (max-width: 500px ) {
     #Portfolio {
@@ -553,7 +555,7 @@ a.contact_btn:hover {
     }
   
     .modal-content {
-      max-width: 90%;
+      max-width: 80%;
       max-height: 80%;
     }
   
@@ -1594,8 +1596,8 @@ padding-top: 18px;
 }
 
 footer {
-    background-color: #ffffff; /* Setează fundalul la negru */
-    color: #000000; /* Setează culoarea textului la alb */
+    background-color: #386177; /* Setează fundalul la negru */
+    color: #386177; /* Setează culoarea textului la alb */
     padding: 0px 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
